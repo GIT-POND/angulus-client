@@ -1,0 +1,12 @@
+<mat-card>
+  <label mat-card-title>Create Post</label>
+
+  <mat-form-field>
+    <input matInput type="text" [(ngModel)]="postTitle" placeholder="Post Title">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput [(ngModel)]="postContent" placeholder="what's happening?"></textarea>
+  </mat-form-field>
+  <button mat-raised-button (click)="onCreatePost()">Create</button>
+</mat-card>

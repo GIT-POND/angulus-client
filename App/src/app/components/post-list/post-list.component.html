@@ -1,0 +1,7 @@
+<p class="mat-body-1" *ngIf="posts.length == 0"> No Posts Yet.</p>
+<ng-container  multi="true" *ngIf="posts.length > 0">
+    <mat-expansion-panel *ngFor="let post of posts">
+      <mat-expansion-panel-header> {{post.title }} </mat-expansion-panel-header>
+      <p>{{ post.content }}</p>
+    </mat-expansion-panel>
+</ng-container>

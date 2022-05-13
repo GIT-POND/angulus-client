@@ -1,0 +1,18 @@
+<!-- <section style="background-color: #fa1;">
+  <h4>property binding (1-way binding)</h4>
+  <textarea rows="10" #inputVar></textarea>
+  <p>{{funcVar}}</p>
+  <button (click)="handleClick(inputVar)">click</button>
+</section> -->
+
+<mat-card>
+  <p mat-card-title>ngModel (2-way binding)</p>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <textarea rows="4" cols="40"  [(ngModel)]="funcVar2"></textarea>
+  </mat-form-field>
+  <br>
+  <button mat-raised-button (click)="handleClick2()">click</button>
+  <hr>
+  <p>{{funcVar}}</p>
+</mat-card>
+

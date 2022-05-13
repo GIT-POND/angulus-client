@@ -1,0 +1,6 @@
+<app-header></app-header>
+<main>
+  <!-- <app-post-sample></app-post-sample> // only one ngModel renders-->
+  <app-post-create (postCreated)="onPostCreated($event)"></app-post-create>
+  <app-post-list [posts]="storedPosts"></app-post-list>
+</main>
